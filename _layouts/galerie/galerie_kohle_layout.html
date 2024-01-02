@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+	{% include galerie/header.html %}
+</head>
+
+<body>
+
+	{% include galerie/galerie_navbar.html %}
+
+	<div class="container" id="main">
+
+		{% include galerie/galerie_header.html %}
+		{% include galerie/galerie_nav_devider.html %}
+
+		<div id="navi">
+			<ul>
+				<li id="a1" data-menu-item="landschaften"><a
+						href="../galerie/bleistift_kohle_landschaften.html">Landschaften</a></li>
+				<li id="a2" data-menu-item="koerperteile"><a
+						href="../galerie/bleistift_kohle_koerpert.html">Körperteile</a></li>
+				<li id="a3" data-menu-item="stillleben"><a
+						href="../galerie/bleistift_kohle_stillleben.html">Stillleben</a></li>
+				<li id="a4" data-menu-item="portraits"><a href="../galerie/bleistift_kohle_portraits.html">Portraits</a>
+				</li>
+				<li id="a5" data-menu-item="studien"><a href="../galerie/bleistift_kohle_studien.html">Studien</a></li>
+				<li id="a6" data-menu-item="natur"><a href="../galerie/bleistift_kohle_natur.html">Natur</a></li>
+				<li id="a7" data-menu-item="tiere"><a href="../galerie/bleistift_kohle_tiere.html">Tiere</a></li>
+				<li id="a8" data-menu-item="akt"><a href="../galerie/bleistift_kohle_akt.html">Akt</a></li>
+			</ul>
+		</div>
+
+		{% include galerie/galerie_content.html %}
+		{% include galerie/galerie_footer.html %}
+		{% include galerie/galerie_magnific_popup.html %}
+
+	</div>
+
+	{% include slick_js.html %}
+
+</body>
+
+</html>

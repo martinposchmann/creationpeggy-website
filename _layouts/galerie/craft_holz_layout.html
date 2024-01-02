@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+	{% include galerie/header.html %}
+</head>
+
+<body>
+
+	{% include galerie/galerie_navbar.html %}
+
+	<div class="container" id="main">
+
+		{% include galerie/craftprojects_header.html %}
+		{% include galerie/galerie_nav_devider.html %}
+
+		<div id="navi">
+			<ul>
+				<li id="a1" data-menu-item="fenster"><a href="../galerie/craft_holz_fenster.html">Fenster</a></li>
+				<li id="a2" data-menu-item="vasen"><a href="../galerie/craft_holz_vasen.html">Hängevasen</a></li>
+				<li id="a3" data-menu-item="holzbilder"><a href="../galerie/craft_holzbilder_bier.html">Holzbilder</a></li>
+				<li id="a4" data-menu-item="lampen"><a href="../galerie/craft_holz_laternen.html">Lampen</a></li>
+				<li id="a5" data-menu-item="regale"><a href="../galerie/craft_holz_regale.html">Regale</a></li>
+				<li id="a6" data-menu-item="schilder"><a href="../galerie/craft_holz_schilder.html">Schilder</a></li>
+				<li id="a7" data-menu-item="schluessel"><a href="../galerie/craft_holz_schluesselboard.html">Schlüsselboard</a></li>
+				<li id="a8" data-menu-item="tischdeko"><a href="../galerie/craft_holz_tischdeko.html">Tischdeko</a></li>
+			</ul>
+		</div>
+
+		{% include galerie/craft_nav_back.html %}
+		{% include galerie/galerie_content.html %}
+		{% include galerie/craft_footer.html %}
+		{% include galerie/galerie_magnific_popup.html %}
+
+	</div>
+
+	{% include slick_js.html %}
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+---
+layout: galerie/craft_holz_lampen_layout
+metaname: Holzdesign
+title: Holzdesign
+katname: holz
+menuitem: kerzenhalter
+contentclass: slideshow
+---
+
+<style type="text/css">
+/*
+#content {
+	padding-left: 230px;
+}
+*/
+</style>
+
+<div class="slideshow">
+	<div>
+		<a
+			href="../bilder/galerie/craft-projects/holz/kerzenhalter-gr.gif"
+			target="blank"> <img
+			src="../bilder/galerie/craft-projects/holz/kerzenhalter-kl.gif"
+			height="160" />
+		</a>
+	</div>	
+	<div>
+		<a
+			href="../bilder/galerie/craft-projects/holz/kerzenhalter2-gr.gif"
+			target="blank"> <img
+			src="../bilder/galerie/craft-projects/holz/kerzenhalter2-kl.gif"
+			height="160" />
+		</a>
+	</div>	
+	{% for i in (1..6) %}
+		{% assign img_file_index = i | prepend: '00' | slice: -2, 2 %}	
+		<div>
+			<a href="../bilder/galerie/craft-projects/shabbychic/decokerze{{ img_file_index }}-gr.gif" target="blank">
+				<img src="../bilder/galerie/craft-projects/shabbychic/decokerze{{ img_file_index }}-kl.gif" height="160">
+			</a>
+		</div>		
+	{% endfor %}
+</div>

@@ -1,0 +1,20 @@
+---
+layout: galerie/galerie_kohle_layout
+metaname: Landschaften (Bleistift/Kohle)
+title: Landschaften
+katname: kohle
+menuitem: landschaften
+contentclass: slideshow
+---
+
+<div class="slideshow">
+
+	{% for i in (1..5) %}
+		{% assign img_file_index = i | prepend: '00' | slice: -2, 2 %}	
+		<div style="width: 125px;">
+			<a href="../bilder/galerie/bleistift-kohle/landschaften/landschaft{{ img_file_index }}-gr.gif" target="blank">
+				<img src="../bilder/galerie/bleistift-kohle/landschaften/landschaft{{ img_file_index }}-kl.gif" width="110">
+			</a>
+		</div>
+	{% endfor %}
+</div>

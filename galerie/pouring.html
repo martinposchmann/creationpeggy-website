@@ -1,0 +1,24 @@
+---
+layout: galerie/gallery_pouring_layout
+metaname: Pouring
+title: Pouring
+katname: pouring
+menuitem: pouring
+contentclass: slideshow
+---
+
+<div class="slideshow">
+	{% for i in (1..14) %}
+		{% assign img_file_index = i | prepend: '00' | slice: -2, 2 %}
+		{% if i != 9 %}
+			<div>
+				<a
+					href="../bilder/galerie/pouring/pouring-{{ img_file_index }}-gr.gif"
+					target="blank"> <img
+					src="../bilder/galerie/pouring/pouring-{{ img_file_index }}-kl.gif"
+					height="130" />
+				</a>
+			</div>
+		{% endif %}		
+	{% endfor %}	
+</div>

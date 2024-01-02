@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+	{% include galerie/header.html %}
+</head>
+
+<body>
+
+	{% include galerie/galerie_navbar.html %}
+
+	<div class="container" id="main">
+
+		{% include galerie/craftprojects_header.html %}
+		{% include galerie/galerie_nav_devider.html %}
+
+		<div id="navi">
+			<ul>
+				<li id="a1" data-menu-item="maritim"><a href="../galerie/craft_3d_bilder_maritim.html">Maritim</a></li>
+				<li id="a2" data-menu-item="musik"><a href="../galerie/craft_3d_bilder_musik.html">Musik</a></li>
+				<li id="a3" data-menu-item="tiere"><a href="../galerie/craft_3d_bilder_tiere.html">Tiere</a></li>
+			</ul>
+		</div>
+
+		{% include galerie/craft_nav_back.html %}
+		{% include galerie/galerie_content.html %}
+		{% include galerie/craft_footer.html %}
+		{% include galerie/galerie_magnific_popup.html %}
+
+	</div>
+
+	{% include slick_js.html %}
+
+</body>
+
+</html>

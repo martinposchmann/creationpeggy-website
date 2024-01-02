@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+	{% include galerie/header.html %}
+</head>
+
+<body>
+
+	{% include galerie/galerie_navbar.html %}
+
+	<div class="container" id="main">
+
+		{% include galerie/galerie_header.html %}
+
+		{% include galerie/galerie_nav_devider.html %}
+
+		<div id="navi">
+			<ul>
+				<li id="a1" data-menu-item="pouring"><a href="../galerie/pouring.html">Bilder</a></li>
+				<li id="a2" data-menu-item="untersetzer"><a href="../galerie/pouring_untersetzer.html">Untersetzer</a>
+				</li>
+			</ul>
+		</div>
+
+		{% include galerie/galerie_content.html %}
+		{% include galerie/galerie_footer.html %}
+		{% include galerie/galerie_magnific_popup.html %}
+
+	</div>
+
+	{% include slick_js.html %}
+
+</body>
+
+</html>

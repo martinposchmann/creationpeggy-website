@@ -1,0 +1,19 @@
+---
+layout: galerie/craft_ostern_layout
+metaname: Osterschmuck
+title: Osterkränze
+katname: ostern
+menuitem: kraenze
+contentclass: slideshow
+---
+
+<div class="slideshow">
+	{% for i in (1..4) %}
+		{% assign img_file_index = i | prepend: '00' | slice: -2, 2 %}
+		<div>
+			<a href="../bilder/galerie/craft-projects/ostern/osterkraenze/osterkranz{{ img_file_index }}-gr.gif" target="blank">
+				<img src="../bilder/galerie/craft-projects/ostern/osterkraenze/osterkranz{{ img_file_index }}-kl.gif" height="135">
+			</a>
+		</div>
+	{% endfor %}
+</div>

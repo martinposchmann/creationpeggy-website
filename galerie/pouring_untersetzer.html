@@ -1,0 +1,22 @@
+---
+layout: galerie/gallery_pouring_layout
+metaname: Pouring
+title: Pouring
+katname: pouring
+menuitem: untersetzer
+contentclass: slideshow
+---
+
+<div class="slideshow">
+	{% for i in (1..14) %}
+		{% assign img_file_index = i | prepend: '00' | slice: -2, 2 %}
+		<div>
+			<a
+				href="../bilder/galerie/pouring/untersetzer/untersetzer{{ img_file_index }}-gr.gif"
+				target="blank"> <img
+				src="../bilder/galerie/pouring/untersetzer/untersetzer{{ img_file_index }}-kl.gif"
+				height="130" />
+			</a>
+		</div>
+	{% endfor %}	
+</div>
