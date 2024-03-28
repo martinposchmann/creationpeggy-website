@@ -1,0 +1,20 @@
+<footer id="footer">
+	<div class="footer-nav">
+		<div class="footer-nav__devider">
+			<img src="../bilder/galerie/linie-s2.gif">
+		</div>
+		<div class="footer-nav__links">
+			<ul id="footer-right">
+				<li data-kat="holz"><a href="../galerie/holz_fenster.html">Holz</a></li>
+				<li data-kat="holzbilder"><a href="../galerie/holzbilder_wein.html">Holzbilder</a></li>
+				<li data-kat="kerzen"><a href="../galerie/kerzen.html">Kerzen</a></li>
+			</ul>
+		</div>
+	</div>
+	{% include galerie/footer_copyright.html %}
+</footer>
+
+<script>
+	$('#footer li[data-kat="{{ page.katname }}"]').addClass('active');
+	$('#navi li[data-menu-item="{{ page.menuitem }}"]').addClass('active');
+</script>

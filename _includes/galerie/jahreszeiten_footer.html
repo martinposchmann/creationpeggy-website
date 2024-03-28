@@ -1,0 +1,21 @@
+<footer id="footer">
+	<div class="footer-nav">
+		<div class="footer-nav__devider">
+			<img src="../bilder/galerie/linie-s2.gif">
+		</div>
+		<div class="footer-nav__links">
+			<ul id="footer-right">
+				<li data-kat="fruehling"><a href="../galerie/jahreszeiten_ostereier.html">Frühling</a></li>
+				<li data-kat="sommer"><a href="../galerie/sommer.html">Sommer</a></li>
+				<li data-kat="herbst"><a href="../galerie/jahreszeiten_herbstkraenze.html">Herbst</a></li>
+				<li data-kat="winter"><a href="../galerie/jahreszeiten_adventskraenze.html">Winter</a></li>
+			</ul>
+		</div>
+	</div>
+	{% include galerie/footer_copyright.html %}
+</footer>
+
+<script>
+	$('#footer li[data-kat="{{ page.katname }}"]').addClass('active');
+	$('#navi li[data-menu-item="{{ page.menuitem }}"]').addClass('active');
+</script>

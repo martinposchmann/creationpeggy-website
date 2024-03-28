@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+	{% include galerie/header.html %}
+</head>
+
+<body>
+
+	{% include galerie/galerie_navbar.html %}
+
+	<div class="container" id="main">
+
+		{% include galerie/gestaltung_header.html %}
+		{% include galerie/galerie_nav_devider.html %}
+
+		<div id="navi">
+			<ul>
+				<li id="a1" data-menu-item="kerzen"><a href="../galerie/kerzen.html">Kerzen</a></li>
+				<li id="a2" data-menu-item="windlichter"><a href="../galerie/windlichter.html">Windlichter</a>
+				</li>
+			</ul>
+		</div>
+
+		{% include galerie/nav_start.html %}
+		{% include galerie/galerie_content.html %}
+		{% include galerie/gestaltung_footer.html %}
+		{% include galerie/galerie_magnific_popup.html %}
+
+	</div>
+
+	{% include slick_js.html %}
+
+</body>
+
+</html>

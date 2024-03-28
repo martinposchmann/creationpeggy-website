@@ -1,0 +1,31 @@
+---
+layout: galerie/holz_layout
+metaname: Holzdesign
+title: Holzdesign
+katname: holz
+menuitem: lampen
+contentclass: slideshow
+---
+
+<style>
+	@media (min-width: 1001px) {
+		.slideshow {
+			width: 480px;
+			margin-left: 10px;
+		}
+	}
+</style>
+
+<div class="slideshow">
+	{% for i in (1..3) reversed %}
+		{% assign img_file_index = i | prepend: '00' | slice: -2, 2 %}
+		<div>
+			<a
+				href="../bilder/galerie/holz/lampen/stamm-{{ img_file_index }}-gr.gif"
+				target="blank"> <img
+				src="../bilder/galerie/holz/lampen/stamm-{{ img_file_index }}-kl.gif"
+				height="200" />
+			</a>
+		</div>
+	{% endfor %}
+</div>

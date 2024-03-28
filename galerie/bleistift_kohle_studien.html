@@ -1,0 +1,19 @@
+---
+layout: galerie/galerie_kohle_layout
+metaname: Studien (Bleistift/Kohle)
+title: Studien
+katname: kohle
+menuitem: studien
+contentclass: slideshow
+---
+
+<div class="slideshow">
+	{% for i in (1..7) %}
+		{% assign img_file_index = i | prepend: '00' | slice: -2, 2 %}
+		<div>
+			<a href="../bilder/galerie/bleistift-kohle/studien/studie{{ img_file_index }}-gr.gif" target="blank">
+				<img src="../bilder/galerie/bleistift-kohle/studien/studie{{ img_file_index }}-kl.gif" height="160">
+			</a>
+		</div>
+	{% endfor %}
+</div>

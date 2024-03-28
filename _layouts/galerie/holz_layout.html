@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+	{% include galerie/header.html %}
+</head>
+
+<body>
+
+	{% include galerie/galerie_navbar.html %}
+
+	<div class="container" id="main">
+
+		{% include galerie/gestaltung_header.html %}
+		{% include galerie/galerie_nav_devider.html %}
+
+		<div id="navi">
+			<ul>
+				<li id="a1" data-menu-item="fenster"><a href="../galerie/holz_fenster.html">Fenster</a></li>
+				<li id="a2" data-menu-item="vasen"><a href="../galerie/holz_vasen.html">Hängevasen</a></li>
+				<li id="a3" data-menu-item="lampen"><a href="../galerie/holz_lampen.html">Lampen</a></li>
+				<li id="a4" data-menu-item="laternen"><a href="../galerie/holz_laternen.html">Laternen</a></li>
+				<li id="a5" data-menu-item="kerzenhalter"><a href="../galerie/holz_kerzenhalter.html">Kerzenhalter</a></li>
+				<li id="a6" data-menu-item="regale"><a href="../galerie/holz_regale.html">Regale</a></li>
+				<li id="a7" data-menu-item="schilder"><a href="../galerie/holz_schilder.html">Schilder</a></li>
+				<li id="a8" data-menu-item="schluessel"><a href="../galerie/holz_schluesselboard.html">Schlüsselboard</a></li>
+			</ul>
+		</div>
+
+		{% include galerie/nav_start.html %}
+		{% include galerie/galerie_content.html %}
+		{% include galerie/gestaltung_footer.html %}
+		{% include galerie/galerie_magnific_popup.html %}
+
+	</div>
+
+	{% include slick_js.html %}
+
+</body>
+
+</html>

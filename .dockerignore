@@ -1,0 +1,11 @@
+.settings
+.project
+_site
+.sass-cache
+.jekyll-cache
+.DS_Store
+.git
+.gitignore
+.vscode
+.devcontainer
+Dockerfile

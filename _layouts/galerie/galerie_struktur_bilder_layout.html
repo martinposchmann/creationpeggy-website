@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+	{% include galerie/header.html %}
+</head>
+
+<body>
+
+	{% include galerie/galerie_navbar.html %}
+
+	<div class="container" id="main">
+
+		{% include galerie/galerie_header.html %}
+		{% include galerie/galerie_nav_devider.html %}
+
+		<div id="navi">
+			<ul>
+				<li id="a1" data-menu-item="blumen"><a href="../galerie/struktur_blumen.html">Blumen/Pflanzen</a></li>
+				<li id="a2" data-menu-item="abstrakt"><a href="../galerie/struktur_abstrakt.html">Abstrakt</a></li>
+				<li id="a3" data-menu-item="federn"><a href="../galerie/struktur_federn.html">Federn</a></li>
+				<li id="a4" data-menu-item="mandala"><a href="../galerie/struktur_mandala.html">Mandala</a></li>
+			</ul>
+		</div>
+
+		{% include galerie/nav_start.html %}
+		{% include galerie/galerie_content.html %}
+		{% include galerie/galerie_footer.html %}
+		{% include galerie/galerie_magnific_popup.html %}
+
+	</div>
+
+	{% include slick_js.html %}
+
+</body>
+
+</html>

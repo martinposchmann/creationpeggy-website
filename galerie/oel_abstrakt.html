@@ -1,0 +1,19 @@
+---
+layout: galerie/galerie_oel_layout
+metaname: Abstrakte Werke (Öl)
+title: Abstrakt
+katname: oel
+menuitem: abstrakt
+contentclass: slideshow
+---
+
+<div class="slideshow" >
+	{% for i in (1..7) %}
+		{% assign img_file_index = i | prepend: '00' | slice: -2, 2 %}
+		<div>
+			<a href="../bilder/galerie/oel/abstrakt/abstrakt-{{ img_file_index }}-gr.gif" target="blank">
+				<img src="../bilder/galerie/oel/abstrakt/abstrakt-{{ img_file_index }}-kl.gif"  height="160">
+			</a>
+		</div>
+	{% endfor %}
+</div>

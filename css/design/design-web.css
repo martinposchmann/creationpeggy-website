@@ -1,0 +1,31 @@
+#navi {
+	background-image: url("../../bilder/design/hinter-web.png");
+	width: 135px;
+	height: 545px;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 300px;
+}
+
+#navi div#n1 {
+	top: 380px;
+	left: 63px;
+}
+
+#refs {
+	font-style: italic;
+	font-size: 12px;
+	font-weight: bold;
+	color: #010249;
+}
+
+#refs div {
+	width: 100%;
+}
+
+#refs .links {
+	text-align: right;
+	border-bottom: 1px solid #010249;
+	margin-bottom: 5px;
+	padding: 5px 0px;
+}

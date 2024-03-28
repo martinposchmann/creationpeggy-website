@@ -1,0 +1,22 @@
+---
+layout: galerie/holz_holzbilder_layout
+metaname: Holzbilder
+title: Holzbilder
+katname: holzbilder
+menuitem: wein
+contentclass: slideshow
+---
+
+<div class="slideshow">
+	{% for i in (1..5) reversed %}
+		{% assign img_file_index = i | prepend: '00' | slice: -2, 2 %}
+		<div>
+			<a
+				href="../bilder/galerie/holzbilder/wein-{{ img_file_index }}-gr.gif"
+				target="blank"> <img
+				src="../bilder/galerie/holzbilder/wein-{{ img_file_index }}-kl.gif"
+				height="200" />
+			</a>
+		</div>
+	{% endfor %}
+</div>

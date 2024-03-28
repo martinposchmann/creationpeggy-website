@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+
+<head>
+	{% include galerie/header.html %}
+</head>
+
+<body>
+
+	{% include galerie/galerie_navbar.html %}
+
+	<div class="container" id="main">
+
+		{% include galerie/jahreszeiten_header.html %}
+		{% include galerie/galerie_nav_devider.html %}
+
+		<div id="navi">
+			<ul>
+				<li id="a1" data-menu-item="eier"><a href="../galerie/jahreszeiten_ostereier.html">Ostereier</a></li>
+				<li id="a2" data-menu-item="kraenze"><a href="../galerie/jahreszeiten_osterkraenze.html">Osterkränze</a></li>
+				<li id="a3" data-menu-item="tischdeko"><a href="../galerie/jahreszeiten_tischdeko_ostern.html">Tischdeko</a>
+				<li id="a4" data-menu-item="toepfe"><a href="../galerie/jahreszeiten_tontoepfchen.html">Tontöpfchen</a></li>
+				</li>
+			</ul>
+		</div>
+
+		{% include galerie/nav_start.html %}
+		{% include galerie/galerie_content.html %}
+		{% include galerie/jahreszeiten_footer.html %}
+		{% include galerie/galerie_magnific_popup.html %}
+
+	</div>
+
+	{% include slick_js.html %}
+</body>
+
+</html>

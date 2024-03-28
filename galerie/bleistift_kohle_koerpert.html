@@ -1,0 +1,28 @@
+---
+layout: galerie/galerie_kohle_layout
+metaname: Körperteile (Bleistift/Kohle)
+title: Körperteile
+katname: kohle
+menuitem: koerperteile
+contentclass: slideshow
+---
+
+<style>
+	@media (min-width: 1001px) {
+		.slideshow {
+			width: 635px;
+			margin-left: 10px;
+		}
+	}
+</style>
+
+<div class="slideshow">
+	{% for i in (1..4) %}
+		{% assign img_file_index = i | prepend: '00' | slice: -2, 2 %}
+		<div>
+			<a href="../bilder/galerie/bleistift-kohle/koerperteile/koerperteile-{{ img_file_index }}-gr.gif" target="blank">
+				<img src="../bilder/galerie/bleistift-kohle/koerperteile/koerperteile-{{ img_file_index }}-kl.gif" height="160">
+			</a>
+		</div>
+	{% endfor %}
+</div>
