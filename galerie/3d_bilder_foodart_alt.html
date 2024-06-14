@@ -1,0 +1,28 @@
+---
+layout: galerie/galerie_3d_bilder_layout
+metaname: 3D-Bilder
+title: Food Art
+katname: 3dbilder
+menuitem: foodart
+contentclass: slideshow
+---
+
+<style>
+	@media (min-width: 1001px) {
+		.slideshow {
+			width: 660px;
+			margin-left: 10px;
+		}
+	}
+</style>
+
+<div class="slideshow">
+	{% for i in (1..4) %}
+		{% assign img_file_index = i | prepend: '00' | slice: -2, 2 %}
+		<div>
+			<a href="../bilder/galerie/3dbilder/foodart/foodart-{{ img_file_index }}-gr.gif" target="blank">
+				<img src="../bilder/galerie/3dbilder/foodart/foodart-{{ img_file_index }}-kl.gif" height="160">
+			</a>
+		</div>
+	{% endfor %}
+</div>

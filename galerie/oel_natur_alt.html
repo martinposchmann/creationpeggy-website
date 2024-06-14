@@ -1,0 +1,19 @@
+---
+layout: galerie/galerie_oel_layout
+metaname: Stillleben (Öl)
+title: Natur
+katname: oel
+menuitem: natur
+contentclass: slideshow
+---
+
+<div class="slideshow" >
+	{% for i in (1..8) %}
+		{% assign img_file_index = i | prepend: '00' | slice: -2, 2 %}
+		<div>
+			<a href="../bilder/galerie/oel/natur/natur-{{ img_file_index }}-gr.gif" target="blank">
+				<img src="../bilder/galerie/oel/natur/natur-{{ img_file_index }}-kl.gif" height="160">
+			</a>
+		</div>
+	{% endfor %}
+</div>

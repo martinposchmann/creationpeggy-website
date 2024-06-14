@@ -1,0 +1,10 @@
+# Site settings
+title: creationpeggy.de
+email: creationpeggy@gmx.de
+description: > # this means to ignore newlines until "baseurl:"
+       Eine Bespreibung
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.creationpeggy.de" # the base hostname & protocol for your site
+exclude: [readme.txt]
+# Build settings
+markdown: kramdown

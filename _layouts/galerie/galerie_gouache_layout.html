@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+	{% include galerie/header.html %}
+</head>
+
+<body>
+
+	{% include galerie/galerie_navbar.html %}
+
+	<div class="container" id="main">
+
+		{% include galerie/galerie_header.html %}
+		{% include galerie/galerie_nav_devider.html %}
+
+		<div id="navi">
+			<ul>
+				<li id="a1" data-menu-item="landschaften"><a
+						href="../galerie/gouache_landschaften.html">Landschaften</a></li>
+				<li id="a2" data-menu-item="stillleben"><a href="../galerie/gouache_stillleben.html">Stillleben</a></li>
+				<li id="a3" data-menu-item="fantasie"><a href="../galerie/gouache_fantasie.html">Fantasie</a></li>
+				<li id="a4" data-menu-item="abstrakt"><a href="../galerie/gouache_abstrakt.html">Abstrakt</a></li>
+				<li id="a5" data-menu-item="natur"><a href="../galerie/gouache_natur.html">Natur</a></li>
+				<li id="a6" data-menu-item="city"><a href="../galerie/gouache_city.html">Stadt</a></li>
+			</ul>
+		</div>
+
+		{% include galerie/galerie_content.html %}
+		{% include galerie/galerie_footer.html %}
+		{% include galerie/galerie_magnific_popup.html %}
+
+	</div>
+
+	{% include slick_js.html %}
+
+</body>
+
+</html>

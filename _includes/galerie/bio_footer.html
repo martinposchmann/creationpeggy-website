@@ -1,0 +1,19 @@
+<footer id="footer" class="footer--bio">
+	<div class="footer-nav">
+		<div class="footer-nav__devider">
+			<img src="../bilder/galerie/linie-s2.gif">
+		</div>
+		<div class="footer-nav__links">
+			<ul id="footer-right">
+				<li><a href="pouring.html">Zur Galerie</a></li>
+			</ul>
+		</div>
+	</div>
+	{% include galerie/footer_copyright.html %}
+</footer>
+
+
+<script>
+	$('#footer #kat-{{ page.katname }}').addClass('active');
+	$('#navi li[data-menu-item="{{ page.menuitem }}"]').addClass('active');
+</script>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+	{% include galerie/header.html %}
+</head>
+
+<body>
+
+	{% include galerie/galerie_navbar.html %}
+
+	<div class="container" id="main">
+
+		{% include galerie/jahreszeiten_header.html %}
+		{% include galerie/galerie_nav_devider.html %}
+
+		<div id="navi">
+		</div>
+
+		{% include galerie/nav_start.html %}
+		{% include galerie/galerie_content.html %}
+		{% include galerie/jahreszeiten_footer.html %}
+		{% include galerie/galerie_magnific_popup.html %}
+
+	</div>
+
+	{% include slick_js.html %}
+</body>
+
+</html>

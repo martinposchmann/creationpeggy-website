@@ -1,0 +1,54 @@
+<nav class="py-2 bg-body-tertiary border-bottom">
+	<div class="container d-flex flex-wrap">
+	  <ul id="nav-sub" class="nav me-auto">
+		<li class="nav-item dropdown">
+			{% assign cssActive = "" %}
+			{% if page.subcategory == "fruehling" %}
+				{% assign cssActive = "active" %}
+			{% endif %}
+			<a href="#" class="nav-link link-secondary dropdown-toggle {{ cssActive }}" data-bs-toggle="dropdown" aria-expanded="false">Frühling</a>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="/galerie/jahreszeiten_ostereier.html">Ostereier</a></li>
+				<li><a class="dropdown-item" href="/galerie/jahreszeiten_osterkraenze.html">Osterkränze</a></li>
+				<li><a class="dropdown-item" href="/galerie/jahreszeiten_tischdeko_ostern.html">Tischdeko</a></li>
+				<li><a class="dropdown-item" href="/galerie/jahreszeiten_tontoepfchen.html">Tontöpfchen</a></li>
+			</ul>
+		</li>
+		<li class="nav-item dropdown">
+			{% assign cssActive = "" %}
+			{% if page.subcategory == "sommer" %}
+				{% assign cssActive = "active" %}
+			{% endif %}
+			<a href="#" class="nav-link link-secondary dropdown-toggle {{ cssActive }}" data-bs-toggle="dropdown" aria-expanded="false">Sommer</a>
+			<ul class="dropdown-menu">
+			</ul>
+		</li>
+		<li class="nav-item dropdown">
+			{% assign cssActive = "" %}
+			{% if page.subcategory == "herbst" %}
+				{% assign cssActive = "active" %}
+			{% endif %}
+			<a href="#" class="nav-link link-secondary dropdown-toggle {{ cssActive }}" data-bs-toggle="dropdown" aria-expanded="false">Herbst</a>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="/galerie/jahreszeiten_herbstkraenze.html">Herbstkränze</a></li>
+				<li><a class="dropdown-item" href="/galerie/jahreszeiten_tischdeko_herbst.html">Tischdeko</a></li>
+			</ul>
+		</li>
+		<li class="nav-item dropdown">
+			{% assign cssActive = "" %}
+			{% if page.subcategory == "winter" %}
+				{% assign cssActive = "active" %}
+			{% endif %}
+			<a href="#" class="nav-link link-secondary dropdown-toggle {{ cssActive }}" data-bs-toggle="dropdown" aria-expanded="false">Winter</a>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="/galerie/jahreszeiten_adventskraenze.html">Adventskränze</a></li>
+				<li><a class="dropdown-item" href="/galerie/jahreszeiten_glasdesign.html">Glasdesign</a></li>
+				<li><a class="dropdown-item" href="/galerie/jahreszeiten_tannenbaeume.html">Tannenbäume</a></li>
+				<li><a class="dropdown-item" href="/galerie/jahreszeiten_tannenzapfen.html">Tannenzapfen</a></li>
+				<li><a class="dropdown-item" href="/galerie/jahreszeiten_tischdeko_xmas.html">Tischdeko</a></li>
+				<li><a class="dropdown-item" href="/galerie/jahreszeiten_tontoepfe.html">Tontöpfe</a></li>
+			</ul>
+		</li>
+	  </ul>
+	</div>
+</nav>

@@ -1,0 +1,19 @@
+---
+layout: galerie/kerzen_layout
+metaname: Windlichter
+title: Windlichter
+katname: kerzen
+menuitem: windlichter
+contentclass: slideshow
+---
+
+<div class="slideshow" >
+	{% for i in (1..6) %}
+		{% assign img_file_index = i | prepend: '00' | slice: -2, 2 %}
+		<div>
+			<a href="../bilder/galerie/windlichter/windlicht-{{ img_file_index }}-gr.gif" target="blank">
+				<img src="../bilder/galerie/windlichter/windlicht-{{ img_file_index }}-kl.gif"  height="180">
+			</a>
+		</div>
+	{% endfor %}
+</div>

@@ -1,0 +1,22 @@
+---
+layout: galerie/holz_layout
+metaname: Holzdesign
+title: Holzdesign
+katname: holz
+menuitem: regale
+contentclass: slideshow
+---
+
+<div class="slideshow">
+	{% for i in (1..6) reversed %}
+		{% assign img_file_index = i | prepend: '00' | slice: -2, 2 %}
+		<div>
+			<a
+				href="../bilder/galerie/holz/regale/regal-{{ img_file_index }}-gr.gif"
+				target="blank"> <img
+				src="../bilder/galerie/holz/regale/regal-{{ img_file_index }}-kl.gif"
+				height="200" />
+			</a>
+		</div>
+	{% endfor %}
+</div>

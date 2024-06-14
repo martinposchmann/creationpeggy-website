@@ -1,0 +1,24 @@
+<footer id="footer">
+	<div class="footer-nav">
+		<div class="footer-nav__devider">
+			<img src="../bilder/galerie/linie-s2.gif">
+		</div>
+		<div class="footer-nav__links">
+			<ul class="footer-nav__links-right">
+				<li id="kat-pouring"><a href="../galerie/pouring.html">Pouring</a></li>
+				<li id="kat-strukturbilder"><a href="../galerie/struktur_blumen.html">Struktur-Bilder</a></li>
+				<li id="kat-3dbilder"><a href="../galerie/3d_bilder_maritim.html">3D-Bilder</a></li>
+				<li id="kat-oel"><a href="../galerie/oel_landschaften.html">Öl</a></li>
+				<li id="kat-gouache"><a href="../galerie/gouache_landschaften.html">Gouache</a></li>
+				<li id="kat-aquarell"><a href="../galerie/aquarell_landschaften.html">Aquarell</a></li>
+				<li id="kat-kohle"><a href="../galerie/bleistift_kohle_landschaften.html">Bleistift/Kohle</a></li>
+			</ul>
+		</div>
+	</div>
+	{% include galerie/footer_copyright.html %}
+</footer>
+
+<script>
+	$('#footer #kat-{{ page.katname }}').addClass('active');
+	$('#navi li[data-menu-item="{{ page.menuitem }}"]').addClass('active');
+</script>

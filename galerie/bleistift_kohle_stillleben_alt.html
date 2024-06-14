@@ -1,0 +1,19 @@
+---
+layout: galerie/galerie_kohle_layout
+metaname: Stillleben (Bleistift/Kohle)
+title: Stillleben
+katname: kohle
+menuitem: stillleben
+contentclass: slideshow
+---
+
+<div class="slideshow">
+	{% for i in (1..6) %}
+		{% assign img_file_index = i | prepend: '00' | slice: -2, 2 %}
+		<div>
+			<a href="../bilder/galerie/bleistift-kohle/stillleben/stillleben-{{ img_file_index }}-gr.gif" target="blank">
+				<img src="../bilder/galerie/bleistift-kohle/stillleben/stillleben-{{ img_file_index }}-kl.gif" height="160">
+			</a>
+		</div>
+	{% endfor %}
+</div>
