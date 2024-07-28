@@ -1,0 +1,47 @@
+<nav class="py-2 bg-body-tertiary border-bottom">
+	<div class="container d-flex flex-wrap">
+	  <ul id="nav-sub" class="nav me-auto">
+		<li class="nav-item dropdown">
+			{% assign cssActive = "" %}
+			{% if page.subcategory == "holz" %}
+				{% assign cssActive = "active" %}
+			{% endif %}
+			<a href="#" class="nav-link link-secondary dropdown-toggle {{ cssActive }}" data-bs-toggle="dropdown" aria-expanded="false">Holz</a>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="/galerie/holz_fenster.html">Fenster</a></li>
+				<li><a class="dropdown-item" href="/galerie/holz_vasen.html">Hängevasen</a></li>
+				<li><a class="dropdown-item" href="/galerie/holz_lampen.html">Lampen</a></li>
+				<li><a class="dropdown-item" href="/galerie/holz_laternen.html">Laternen</a></li>
+				<li><a class="dropdown-item" href="/galerie/holz_kerzenhalter.html">Kerzenhalter</a></li>
+				<li><a class="dropdown-item" href="/galerie/holz_regale.html">Regale</a></li>
+				<li><a class="dropdown-item" href="/galerie/holz_schilder.html">Schilder</a></li>
+				<li><a class="dropdown-item" href="/galerie/holz_schluesselboard.html">Schlüsselboard</a></li>
+			</ul>
+		</li>
+		<li class="nav-item dropdown">
+			{% assign cssActive = "" %}
+			{% if page.subcategory == "holzbilder" %}
+				{% assign cssActive = "active" %}
+			{% endif %}
+			<a href="#" class="nav-link link-secondary dropdown-toggle {{ cssActive }}" data-bs-toggle="dropdown" aria-expanded="false">Holzbilder</a>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="/galerie/holzbilder_wein.html">Wein</a></li>
+				<li><a class="dropdown-item" href="/galerie/holzbilder_bier.html">Bier</a></li>
+				<li><a class="dropdown-item" href="/galerie/holzbilder_maritim.html">Maritim</a></li>
+				<li><a class="dropdown-item" href="/galerie/holzbilder_tiere.html">Tiere</a></li>
+			</ul>
+		</li>
+		<li class="nav-item dropdown">
+			{% assign cssActive = "" %}
+			{% if page.subcategory == "kerzen" %}
+				{% assign cssActive = "active" %}
+			{% endif %}
+			<a href="#" class="nav-link link-secondary dropdown-toggle {{ cssActive }}" data-bs-toggle="dropdown" aria-expanded="false">Kerzen</a>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="/galerie/kerzen.html">Kerzen</a></li>
+				<li><a class="dropdown-item" href="/galerie/windlichter.html">Windlichter</a></li>
+			</ul>
+		</li>
+	  </ul>
+	</div>
+</nav>
