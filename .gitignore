@@ -1,0 +1,7 @@
+.settings
+.project
+_site
+.sass-cache
+.jekyll-cache
+src/.jekyll-cache
+.DS_Store
