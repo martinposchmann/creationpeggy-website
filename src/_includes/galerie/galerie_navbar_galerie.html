@@ -1,0 +1,107 @@
+<nav class="py-2 bg-body-tertiary border-bottom">
+	<div class="container d-flex flex-wrap">
+	  <ul id="nav-sub" class="nav me-auto">
+		<li class="nav-item dropdown">
+			{% assign cssActive = "" %}
+			{% if page.subcategory == "pouring" %}
+				{% assign cssActive = "active" %}
+			{% endif %}
+			<a href="#" class="nav-link link-secondary dropdown-toggle {{ cssActive }}" data-bs-toggle="dropdown" aria-expanded="false">Pouring</a>
+			<ul class="dropdown-menu">
+				<li class="active"><a class="dropdown-item" href="/galerie/pouring.html">Bilder</a></li>
+				<li><a class="dropdown-item" href="/galerie/pouring_untersetzer.html">Untersetzer</a></li>
+			</ul>
+		</li>
+		<li class="nav-item dropdown">
+			{% assign cssActive = "" %}
+			{% if page.subcategory == "strukturbilder" %}
+				{% assign cssActive = "active" %}
+			{% endif %}
+			<a href="#" class="nav-link link-secondary dropdown-toggle {{ cssActive }}" data-bs-toggle="dropdown" aria-expanded="false">Struktur-Bilder</a>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="/galerie/struktur_abstrakt.html">Abstrakt</a></li>
+				<li><a class="dropdown-item" href="/galerie/struktur_blumen.html">Blumen/Pflanzen</a></li>
+				<li><a class="dropdown-item" href="/galerie/struktur_federn.html">Federn</a></li>
+				<li><a class="dropdown-item" href="/galerie/struktur_mandala.html">Mandala</a></li>
+				<li><a class="dropdown-item" href="/galerie/struktur_tiere.html">Tiere</a></li>
+			</ul>
+		</li>
+		<li class="nav-item dropdown">
+			{% assign cssActive = "" %}
+			{% if page.subcategory == "3dbilder" %}
+				{% assign cssActive = "active" %}
+			{% endif %}
+			<a href="#" class="nav-link link-secondary dropdown-toggle {{ cssActive }}" data-bs-toggle="dropdown" aria-expanded="false">3D-Bilder</a>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="/galerie/3d_bilder_cafeemotion.html">Café Emotion</a></li>
+				<li><a class="dropdown-item" href="/galerie/3d_bilder_foodart.html">Food Art</a></li>
+				<li><a class="dropdown-item" href="/galerie/3d_bilder_maritim.html">Maritim</a></li>
+				<li><a class="dropdown-item" href="/galerie/3d_bilder_musik.html">Musik</a></li>
+				<li><a class="dropdown-item" href="/galerie/3d_bilder_tiere.html">Tiere</a></li>
+			</ul>
+		</li>
+		<li class="nav-item dropdown">
+			{% assign cssActive = "" %}
+			{% if page.subcategory == "oel" %}
+				{% assign cssActive = "active" %}
+			{% endif %}
+			<a href="#" class="nav-link link-secondary dropdown-toggle {{ cssActive }}" data-bs-toggle="dropdown" aria-expanded="false">Öl</a>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="/galerie/oel_abstrakt.html">Abstrakt</a></li>
+				<li><a class="dropdown-item" href="/galerie/oel_meister.html">Alte Meister</a></li>
+				<li><a class="dropdown-item" href="/galerie/oel_emotionen.html">Emotionen</a></li>
+				<li><a class="dropdown-item" href="/galerie/oel_fantasie.html">Fantasie</a></li>
+				<li><a class="dropdown-item" href="/galerie/oel_landschaften.html">Landschaften</a></li>
+				<li><a class="dropdown-item" href="/galerie/oel_natur.html">Natur</a></li>
+				<li><a class="dropdown-item" href="/galerie/oel_stillleben.html">Stillleben</a></li>
+				<li><a class="dropdown-item" href="/galerie/oel_tiere.html">Tiere</a></li>
+			</ul>
+		</li>
+		<li class="nav-item dropdown">
+			{% assign cssActive = "" %}
+			{% if page.subcategory == "gouache" %}
+				{% assign cssActive = "active" %}
+			{% endif %}
+			<a href="#" class="nav-link link-secondary dropdown-toggle {{ cssActive }}" data-bs-toggle="dropdown" aria-expanded="false">Gouache</a>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="/galerie/gouache_abstrakt.html">Abstrakt</a></li>
+				<li><a class="dropdown-item" href="/galerie/gouache_fantasie.html">Fantasie</a></li>
+				<li><a class="dropdown-item" href="/galerie/gouache_landschaften.html">Landschaften</a></li>
+				<li><a class="dropdown-item" href="/galerie/gouache_natur.html">Natur</a></li>
+				<li><a class="dropdown-item" href="/galerie/gouache_city.html">Stadt</a></li>
+				<li><a class="dropdown-item" href="/galerie/gouache_stillleben.html">Stillleben</a></li>
+			</ul>
+		</li>
+		<li class="nav-item dropdown">
+			{% assign cssActive = "" %}
+			{% if page.subcategory == "aquarell" %}
+				{% assign cssActive = "active" %}
+			{% endif %}
+			<a href="#" class="nav-link link-secondary dropdown-toggle {{ cssActive }}" data-bs-toggle="dropdown" aria-expanded="false">Aquarell</a>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="/galerie/aquarell_landschaften.html">Landschaften</a></li>
+				<li><a class="dropdown-item" href="/galerie/aquarell_natur.html">Natur</a></li>
+				<li><a class="dropdown-item" href="/galerie/aquarell_portraits.html">Portraits</a></li>
+				<li><a class="dropdown-item" href="/galerie/aquarell_stillleben.html">Stillleben</a></li>
+			</ul>
+		</li>
+		<li class="nav-item dropdown">
+			{% assign cssActive = "" %}
+			{% if page.subcategory == "kohle" %}
+				{% assign cssActive = "active" %}
+			{% endif %}
+			<a href="#" class="nav-link link-secondary dropdown-toggle {{ cssActive }}" data-bs-toggle="dropdown" aria-expanded="false">Bleistift/Kohle</a>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="/galerie/bleistift_kohle_akt.html">Akt</a></li>
+				<li><a class="dropdown-item" href="/galerie/bleistift_kohle_landschaften.html">Landschaften</a></li>
+				<li><a class="dropdown-item" href="/galerie/bleistift_kohle_koerpert.html">Körperteile</a></li>
+				<li><a class="dropdown-item" href="/galerie/bleistift_kohle_natur.html">Natur</a></li>
+				<li><a class="dropdown-item" href="/galerie/bleistift_kohle_portraits.html">Portraits</a></li>
+				<li><a class="dropdown-item" href="/galerie/bleistift_kohle_stillleben.html">Stillleben</a></li>
+				<li><a class="dropdown-item" href="/galerie/bleistift_kohle_studien.html">Studien</a></li>
+				<li><a class="dropdown-item" href="/galerie/bleistift_kohle_tiere.html">Tiere</a></li>
+			</ul>
+		</li>
+	  </ul>
+	</div>
+</nav>

@@ -1,0 +1,33 @@
+on:
+  push:
+    tags:
+      - 'v*'
+
+env:
+  #JEKYLL_IMAGE: jekyll/builder:latest
+  JEKYLL_IMAGE: jekyll/jekyll:minimal
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:    
+    - uses: actions/checkout@v4
+    - name: Build
+      run: |
+        docker run \
+        -v ${{ github.workspace }}/src:/build/src -v ${{ github.workspace }}/build/_site:/build/_site \
+        $JEKYLL_IMAGE /bin/bash -c "mkdir /build/src/.jekyll-cache && chmod -R 777 /build/src/.jekyll-cache  && chmod -R 777 /build/_site && RUBYOPT="-W0" jekyll build -s /build/src -d /build/_site"
+    - name: Show result
+      run: |
+        echo "result:" && find ${{ github.workspace }}/build/_site -type f
+    - name: Upload
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.ftp_host }}
+        username: ${{ secrets.ftp_user }}
+        password: ${{ secrets.ftp_password }}
+        protocol: ftps
+        log-level: standard
+        local-dir: ${{ github.workspace }}/build/_site/
+        server-dir: WWWROOT/www/htdocs/
+        dry-run: false        
