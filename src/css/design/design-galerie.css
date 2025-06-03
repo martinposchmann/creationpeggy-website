@@ -1,0 +1,49 @@
+#navi {
+	background-image: url("../../bilder/design/galerie/navigation-hintergrund.png");
+	width: 135px;
+	height: 545px;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 300px;
+}
+
+/* Link Positionen */
+#navi div#n1 {
+	top: 81px;
+	left: 59px;
+}
+
+#navi div#n2 {
+	top: 124px;
+	left: 84px;
+}
+
+#navi div#n3 {
+	top: 171px;
+	left: 99px;
+}
+
+#navi div#n4 {
+	top: 218px;
+	left: 107px;
+}
+
+#navi div#n5 {
+	top: 266px;
+	left: 104px;
+}
+
+#navi div#n6 {
+	top: 313px;
+	left: 92px;
+}
+
+#navi div#n7 {
+	top: 356px;
+	left: 78px;
+}
+
+#navi div#n8 {
+	top: 401px;
+	left: 59px;
+}

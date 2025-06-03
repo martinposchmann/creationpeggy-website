@@ -1,0 +1,96 @@
+#root {
+	max-width: 800px;
+	height: 0;
+	width: 100% !important;
+	height: auto !important;
+	margin: 0 auto;
+}
+
+table#root,
+div#root {
+	/*margin: 0 auto;*/
+	position: relative;
+	background-repeat: no-repeat;
+}
+
+#mainnavi {
+	width: 70%;
+}
+
+#mainnavi a {
+	font-size: 3.5vw !important;
+}
+
+#mainnavi a span {
+	padding-top: 1px !important;
+	text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.74);
+}
+
+@media all and (min-width: 580px) {
+	#mainnavi a {
+		font-size: 19px !important;
+	}
+}
+
+
+#mainnavi div#n1 {
+	top: 30%;
+	left: 62%;
+}
+
+#mainnavi div#n2 {
+	left: 66.5%;
+	top: 40.5%;
+}
+
+#mainnavi div#n3 {
+	left: 68.5%;
+	top: 53%;
+}
+
+#mainnavi div#n4 {
+	left: 67%;
+	top: 65.5%;
+}
+
+#mainnavi div#n5 {
+	left: 63%;
+	top: 76.5%;
+}
+
+#mainnavi div#n6 {
+	left: 57%;
+	top: 85.5%;
+}
+
+@media all and (max-width: 375px) {
+	#mainnavi div#n1 {
+		top: 28%;
+		left: 61%;
+	}
+
+	#mainnavi div#n2 {
+		top: 39%;
+		left: 66%;
+	}
+
+	#mainnavi div#n3 {
+		top: 50%;
+		left: 68%;
+	}
+
+	#mainnavi div#n4 {
+		top: 63%;
+		left: 67%;
+	}
+
+	#mainnavi div#n5 {
+		top: 74%;
+		left: 63%;
+	}
+
+	#mainnavi div#n6 {
+		top: 83%;
+		left: 57.2%;
+	}
+}

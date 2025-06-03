@@ -1,0 +1,252 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+	background-color: #f8f9fa;
+}
+
+header,
+footer {
+	background-color: #470100;
+}
+
+header .nav-link {
+	color: #fce702 !important;
+}
+
+header .nav-link:focus,
+header .nav-link.active {
+	color: #fff !important;
+}
+
+header .nav-link:hover {
+	color: #fefefe !important;
+}
+
+header .logo {
+	max-width: 180px;
+}
+
+@media (min-width: 360px) {
+	header .logo {
+		max-width: 200px;
+	}
+}
+
+@media (min-width: 380px) {
+	header .logo {
+		max-width: 250px;
+	}
+}
+
+@media (min-width: 768px) {
+	header .logo {
+		margin-right: 25px;
+		height: 16px;
+	}
+}
+
+header .logo-sub {
+	color: #fce702;
+	font-size: 14px;
+	font-family: "PT Sans", sans-serif;
+}
+
+#nav-sub .nav-link.active {
+	font-weight: bold;
+	/* color: rgba(0, 0, 0, .9) !important; */
+}
+
+footer {
+	margin-top: auto;
+}
+
+footer .disclaimer {
+	color: #aeaeae;
+}
+
+.intro {
+	padding-top: 12px;
+}
+
+#bio-image {
+	float: left;
+	margin: 0 30px 10px 0 !important;
+	width: 150px;
+
+	image-rendering: -moz-crisp-edges;
+	/* Firefox */
+	image-rendering: -o-crisp-edges;
+	/* Opera */
+	image-rendering: -webkit-optimize-contrast;
+	/* Webkit (non-standard naming) */
+	image-rendering: crisp-edges;
+	-ms-interpolation-mode: nearest-neighbor;
+	/* IE (non-standard property) */
+}
+
+.item {
+	/* border: 1px solid green; */
+	height: 270px;
+	padding: 20px !important;
+	margin-bottom: 50px;
+	/*
+	border: 1px solid #dee2e6;
+	border-radius: .25rem;
+	*/
+}
+
+.item--small {
+	height: 160px;
+}
+
+.item--medium {
+	height: 200px;
+}
+
+.item img {
+	object-fit: contain;
+	height: 100%;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+
+	/* -webkit-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.39);
+	-moz-box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.39);
+	box-shadow: 1px 1px 6px 0px rgba(0, 0, 0, 0.39);
+	transition: transform .2s; */
+
+	filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.39)) drop-shadow(0 0 3px rgba(0, 0, 0, 0.39));
+}
+
+.img-subtitle {
+	margin-top: 10px;
+	text-align: center;
+    font-size: 14px;
+	color: RGBA(var(--bs-secondary-rgb),var(--bs-link-opacity,1))!important;
+}
+
+.photo-gallery {
+	color: #313437;
+	background-color: #fff;
+}
+
+.photo-gallery p {
+	color: #7d8285;
+}
+
+.photo-gallery h2 {
+	font-weight: bold;
+	margin-bottom: 40px;
+	padding-top: 40px;
+	color: inherit;
+}
+
+@media (max-width:767px) {
+	.photo-gallery h2 {
+		margin-bottom: 25px;
+		padding-top: 25px;
+		font-size: 24px;
+	}
+}
+
+.photo-gallery .intro {
+	font-size: 16px;
+	max-width: 500px;
+	margin: 0 auto 40px;
+}
+
+.photo-gallery .intro p {
+	margin-bottom: 0;
+}
+
+.photo-gallery .photos {
+	padding-bottom: 20px;
+}
+
+.photo-gallery .item {
+	padding-bottom: 30px;
+}
+
+/* index-page */
+
+body.index-page {
+	background-color: #470100;
+	padding: 0;
+	margin: 0;
+}
+
+.index-page__cover-container {
+	height: 96vh;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.index-page__cover {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.index-page__cover-logo {
+	text-align: center;
+}
+
+@media (max-width: 375px) {
+	.index-page__cover-logo-img {
+		width: 300px;
+		height: auto;
+	}
+}
+
+.index-page__cover-devider {
+	width: 100%;
+}
+
+.index-page__cover-footer ul {
+	text-align: center;
+	padding: 0;
+}
+
+.index-page__cover-footer ul li {
+	padding: 5px 5px;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.index-page__cover-footer a {
+	color: #fce702;
+	font-size: 18px;
+	text-decoration: none;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: normal;
+}
+
+@media screen and (max-width: 480px) {
+	.index-page #footer ul li#creationpeggy {
+		margin-right: 0;
+	}
+}
+
+.index-page__nav {
+	margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.index-page #footer--copyright {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	margin: 46px 0 10px 0;
+	color: #aeaeae;
+	font-size: 12px;
+	width: 100%;
+	text-align: center;
+	display: inline-block;	
+	font-family: sans-serif;
+}
+
+/* end index-page */

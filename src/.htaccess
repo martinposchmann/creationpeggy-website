@@ -1,0 +1,10 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} !^www.creationpeggy.de
+RewriteRule (.*) https://www.creationpeggy.de%{REQUEST_URI} [R=301,L]
+
+# Deny access to hidden files
+<FilesMatch "^\.">
+Order allow,deny
+Deny from all
+</FilesMatch>

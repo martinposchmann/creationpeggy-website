@@ -1,0 +1,44 @@
+<div class="intro">
+	<h2 class="text-center">{{ page.headline }}</h2>
+	{% if page.subheadline And page.subheadline != "" And page.subheadline != nil %}
+		<p class="text-center">{{ page.subheadline }}</p>
+	{% endif %}
+</div>
+<div class="row photos">
+	{% if page.image_small_suffix And page.image_small_suffix != "" And page.image_small_suffix != nil %}
+		{% assign suffix_small = page.image_small_suffix %}
+	{% else %}
+		{% assign suffix_small = '-300.jpg' %}
+	{% endif %}
+
+	{% if page.image_large_suffix And page.image_large_suffix != "" And page.image_large_suffix != nil %}
+		{% assign suffix_large = page.image_large_suffix %}
+	{% else %}
+		{% assign suffix_large = '-gr.gif' %}
+	{% endif %}
+
+	{% assign css_modifier = "" %}
+	{% if page.css_modifier And page.css_modifier != "" And page.css_modifier != nil %}
+		{% assign css_modifier = page.css_modifier %}
+	{% endif %}
+
+	{% if page.images And page.images != "" And page.images != nil %}
+	{% for img in page.images %}
+		{% assign img_preview_url = '../bilder/galerie/' | append: img.path | append: suffix_small %}
+		{% assign img_large_url = '../bilder/galerie/' | append: img.path | append: suffix_large %}
+		{% include galerie/image_item.html img_preview_url=img_preview_url img_large_url=img_large_url subtitle=img.title css_modifier=css_modifier %}
+	{% endfor %}
+
+	{% else %}
+
+	{% for i in (1..page.image_count) %}
+		{% assign img_file_index = i | prepend: '00' | slice: -2, 2 %}
+		{% assign img_preview_url = '../bilder/galerie/' | append: page.image_url_prefix | append: img_file_index | append: suffix_small %}
+		{% assign img_large_url = '../bilder/galerie/' | append: page.image_url_prefix | append: img_file_index | append: suffix_large %}
+		{% assign array_index = i | minus: 1 %}
+		{% assign subtitle = page.subtitles[array_index] %}
+		{% include galerie/image_item.html img_preview_url=img_preview_url img_large_url=img_large_url subtitle=subtitle css_modifier=css_modifier %}
+	{% endfor %}
+
+	{% endif %}
+</div>

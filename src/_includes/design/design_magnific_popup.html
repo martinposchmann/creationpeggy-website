@@ -1,0 +1,47 @@
+<script>
+	$(document).ready(function () {
+
+		$('.image-link').magnificPopup({ type: 'image' });
+
+		$('#images .row.imgs').magnificPopup({
+			delegate: 'a',
+			type: 'image',
+			gallery: {
+				enabled: true
+			},
+			mainClass: 'mfp-with-zoom mfp-img-mobile',
+			zoom: {
+				enabled: true,
+				duration: 300, // don't foget to change the duration also in CSS
+				opener: function (element) {
+					return element.find('img');
+				}
+			},
+			image: {
+				verticalFit: true,
+				titleSrc: function (item) {
+					return '';
+				}
+			},
+			closeOnContentClick: true,
+			callbacks: {
+				open: function () {
+					/* history back schliesst ggf magnific popup layer */
+					location.href = location.href.split('#')[0] + "#gal";
+				}
+				, close: function () {
+					if (location.hash) history.go(-1);
+				}
+			}
+
+		});
+
+		/* history back schliesst ggf magnific popup layer */
+		$(window).on('hashchange', function () {
+			if (location.href.indexOf("#gal") < 0) {
+				$.magnificPopup.close();
+			}
+		});
+	});
+
+</script>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+	{% include galerie/head.html %}
+</head>
+<body>
+	{% include galerie/galerie_header.html %}
+
+	{% if page.category == "galerie" %}
+		{% include galerie/galerie_navbar_galerie.html %}
+	{% elsif page.category == "gestaltung" %}
+		{% include galerie/galerie_navbar_gestaltung.html %}
+	{% elsif page.category == "jahreszeiten" %}
+		{% include galerie/galerie_navbar_jahreszeiten.html %}
+	{% endif %}
+
+	{% if page.category == "bio" %}
+		{{ content }}
+	{% else %}
+		{% include galerie/galerie_content.html %}
+	{% endif %}
+	{% include galerie/galerie_footer.html %}
+	{% include galerie/galerie_js.html %}
+</body>
+</html>
